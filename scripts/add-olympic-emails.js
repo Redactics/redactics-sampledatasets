@@ -11,7 +11,7 @@ fs.createReadStream('../source-data/athletes.csv')
   .on('end', () => {
     var finalCSV = "";
     results.map(r => {
-      finalCSV += r['Name'] + "," + r['NOC'] + "," + r['Discipline'] + "," + r['Email'] + "\n";
+      finalCSV += "\"" + r['Name'] + "\",\"" + r['NOC'] + "\",\"" + r['Discipline'] + "\",\"" + r['Email'] + "\"\n";
     })
     fs.writeFileSync('../2020-olympic-athletes/athletes.csv', finalCSV)
   });
