@@ -13,7 +13,7 @@ fs.createReadStream('../source-data/athletes.csv')
     results.push(data)
   })
   .on('end', () => {
-    var finalCSV = headers.join(',') + "\n";
+    var finalCSV = headers.join(',').toLowerCase() + "\n";
     results.map(r => {
       finalCSV += "\"" + r['Name'] + "\",\"" + r['NOC'] + "\",\"" + r['Discipline'] + "\",\"" + r['Email'] + "\"\n";
     })
