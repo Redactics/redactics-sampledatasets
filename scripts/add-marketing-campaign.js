@@ -30,8 +30,8 @@ fs.createReadStream('../source-data/marketing_campaign.csv')
   .on('end', () => {
     var finalCSV = headers.join(',').toLowerCase() + "\n";
     results.map(r => {
-      finalCSV += "\"" + 
-        r['ID'] + "\",\"" + 
+      finalCSV +=  
+        r['ID'] + ",\"" + 
         r['First_Name'] + "\",\"" + 
         r['Last_Name'] + "\",\"" + 
         r['Email'] + "\",\"" + 
