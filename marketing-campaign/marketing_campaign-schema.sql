@@ -1,8 +1,5 @@
 
-#CREATE SEQUENCE IF NOT EXISTS marketing_campaign_id_seq;
-
 CREATE TABLE "public"."marketing_campaign" (
-    #"id" int4 NOT NULL DEFAULT nextval('marketing_campaign_id_seq'::regclass),
     "id" int4 NOT NULL,
     "first_name" varchar,
     "last_name" varchar,
