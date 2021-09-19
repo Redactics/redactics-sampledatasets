@@ -3,7 +3,7 @@ CREATE TABLE "public"."marketing_campaign" (
     "id" int4 NOT NULL,
     "first_name" varchar,
     "last_name" varchar,
-    "email" varchar,
+    "email" varchar UNIQUE,
     "phone" varchar,
     "last_login_ip" varchar,
     "year_birth" int2,
