@@ -43,7 +43,6 @@ fs.createReadStream('../source-data/marketing_campaign.csv')
         r['Income'] + "\",\"" + 
         r['Kidhome'] + "\",\"" + 
         r['Teenhome'] + "\",\"" + 
-        r['Marital_Status'] + "\",\"" + 
         r['Dt_Customer'] + "\",\"" + 
         r['Recency'] + "\",\"" + 
         r['MntWines'] + "\",\"" +
