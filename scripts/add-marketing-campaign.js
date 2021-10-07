@@ -23,7 +23,7 @@ fs.createReadStream('../source-data/marketing_campaign.csv')
     data['First_Name'] = name.split(' ')[0];
     data['Last_Name'] = name.split(' ')[1];
     data['Email'] = name.replace(/\s/g,'').toLowerCase() + '@gmail.com';
-    data['Phone'] = getRandomArbitrary(200, 799) + "-" + getRandomArbitrary(200, 999) + "-" + getRandomArbitrary(0, 9999);
+    data['Phone'] = getRandomArbitrary(200, 799) + "-" + getRandomArbitrary(200, 999) + "-" + getRandomArbitrary(1000, 9999);
     data['Last_Login_IP'] = getRandomArbitrary(1, 255) + "." + getRandomArbitrary(1, 255) + "." + getRandomArbitrary(1, 255) + "." + getRandomArbitrary(1, 255);
     results.push(data)
   })
